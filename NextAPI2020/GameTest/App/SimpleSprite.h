@@ -24,7 +24,7 @@ public:
     void Draw();
 	
 	// Sets and Gets for the various attributes of the sprite.
-    void SetPosition(float x, float y) { m_xpos = x; m_ypos = y; }   
+    void SetPosition(float x, float y) { m_xpos = x; m_ypos = y; }
     void SetAngle(float a)  { m_angle = a; }
     void SetScale(float s) { m_scale = s; }
     void SetFrame(unsigned int f);

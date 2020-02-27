@@ -4,7 +4,8 @@
 #include "stdafx.h"
 //------------------------------------------------------------------------
 #include <windows.h> 
-#include <math.h>  
+#include <math.h>
+#include <string>
 //------------------------------------------------------------------------
 #include "app\app.h"
 //------------------------------------------------------------------------
@@ -40,6 +41,7 @@ void Init()
 	testSprite->CreateAnimation(ANIM_RIGHT, speed, { 16,17,18,19,20,21,22,23 });
 	testSprite->CreateAnimation(ANIM_FORWARDS, speed, { 24,25,26,27,28,29,30,31 });
 	testSprite->SetScale(2.0f);
+    testSprite->SetColor(1.0f,0.0f,1.0f);
 
 	testSprite2 = App::CreateSprite(".\\TestData\\Ships.bmp", 2, 12);
 	testSprite2->SetPosition(400.0f, 400.0f);	
@@ -159,7 +161,10 @@ void Render()
 	//------------------------------------------------------------------------
 	// Example Text.
 	//------------------------------------------------------------------------
-	App::Print(100, 100, "Sample Text");
+    float mx = 0;
+    float my = 0;
+    App::GetMousePos(mx, my);
+    App::Print(mx, my, (std::to_string(mx)+ ", " + std::to_string(my)).c_str());
 
 }
 //------------------------------------------------------------------------
