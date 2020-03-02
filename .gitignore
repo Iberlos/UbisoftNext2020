@@ -54,3 +54,10 @@
 /.vs/ProjectSettings.json
 /.vs/VSWorkspaceState.json
 /.vs/slnx.sqlite
+/NextAPI2020/.vs/GameTest/v16/Browse.VC.db
+/NextAPI2020/.vs/GameTest/v16/Browse.VC.opendb
+/NextAPI2020/.vs/GameTest/v16/ipch/bb4aa84c08f8a450.ipch
+/NextAPI2020/GameTest/x64/Debug/GameTest.Build.CppClean.log
+/NextAPI2020/GameTest/x64/Debug/GameTest.vcxproj.FileListAbsolute.txt
+/NextAPI2020/GameTest/x64/Debug/Matrix4x4.obj
+/NextAPI2020/GameTest/x64/Debug/Transform.obj
